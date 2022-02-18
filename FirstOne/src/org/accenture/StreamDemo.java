@@ -45,7 +45,7 @@ public class StreamDemo {
         System.out.println(minValue);
         Integer maxValue=descSortedMarks.stream().max(Comparator.naturalOrder()).get();
         System.out.println(maxValue);
-        System.out.println("---------------$$$$$$$$$$$$$4445365ew6wtyety-------");
+        System.out.println("------------------");
         //________________________________________
         //****************************************
         ArrayList<String> y = new ArrayList<>();

@@ -52,6 +52,11 @@ public class StreamDemo {
         System.out.println(sortedAnimals);//Printing sorted values
         List<String> descSortedAnimals = y.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());//sorting the animals(descending order)
         System.out.println(descSortedAnimals);//Printing sorted values
+        extracted(y);
+        System.out.println("________________________");
+    }
+
+    private static void extracted(ArrayList<String> y) {
         Comparator<String> c = (s1,s2)->{
             if (s1.length()<s2.length())
                 return -1;
@@ -63,4 +68,5 @@ public class StreamDemo {
         List<String> sortedAnimalsBasedOnLength = y.stream().sorted(c).collect(Collectors.toList());//collecting the sorted animals based on length
         System.out.println(sortedAnimalsBasedOnLength);//printing the sorted animals
     }
+
 }

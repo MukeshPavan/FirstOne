@@ -1,10 +1,11 @@
 package org.accenture;
+
 public class StudentDemo {
-     private int studentId;
-     private String studentName;
-     private String department;
-     private Address a;
-     private College c;
+    private int studentId;
+    private String studentName;
+    private String department;
+    private Address a;
+    private College c;
 
     public StudentDemo(int studentId, String studentName, String department, Address a, College c) {
         this.studentId = studentId;
@@ -56,7 +57,7 @@ public class StudentDemo {
 
     @Override
     public String toString() {
-        return "StudentDemo{" +
+        return "Student{" +
                 "studentId=" + studentId +
                 ", studentName='" + studentName + '\'' +
                 ", department='" + department + '\'' +

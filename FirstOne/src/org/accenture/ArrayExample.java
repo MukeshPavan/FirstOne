@@ -20,17 +20,11 @@ public class ArrayExample {
         int[][] myNumbers = {{1, 3, 5, 7}, {2, 4, 6}, {2, 3, 5, 7}};
         int x = myNumbers[2][2];
         System.out.println(x);
-        for (int j = 0; j < myNumbers[0].length; ++j) {
-            System.out.print(myNumbers[0][j]);
+        for (int[] myNumber : myNumbers) {
+            for (int i : myNumber) {
+                System.out.print(i);
+            }
+            System.out.println();
         }
-        System.out.println();
-        for (int j = 0; j < myNumbers[1].length; ++j) {
-            System.out.print(myNumbers[1][j]);
-        }
-        System.out.println();
-        for (int j = 0; j < myNumbers[2].length; ++j) {
-            System.out.print(myNumbers[2][j]);
-        }
-        System.out.println();
     }
 }
